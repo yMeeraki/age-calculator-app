@@ -19,9 +19,12 @@ body{
  */
  .card{
     background-color: #fff;
-    padding: 1rem;
+    padding: 3rem;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 25rem;
  }
 
  /*     Sections   */
@@ -68,4 +71,31 @@ body{
     padding: .75rem;
     max-width: 3.75rem;
     border-radius: .3rem;
+ }
+
+ /*     Button   */
+
+.chevron-button{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    align-self: flex-end;
+ }
+
+ @media  screen and (max-width: 600px) {
+    .chevron-button{
+        align-self: center;
+    }
+ }
+
+
+ h1{
+    font-size: 32px;
+    margin: 0;
  }

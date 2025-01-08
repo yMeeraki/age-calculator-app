@@ -30,27 +30,42 @@
       <!--  Section for Day Input -->
       <div class="input">
         <label for="day-date">Day</label>
-        <input type="number" name="day-date" id="day-date" placeholder="DD">
+        <input type="number" name="day-date" id="day-date" min="1" inputmode="numeric" placeholder="DD">
       </div>
 
       <!--  Section for Month Input -->
       <div class="input">
         <label for="month-date">Month</label>
-        <input type="number" name="month-date" id="month-date" placeholder="MM">
+        <input type="number" name="month-date" id="month-date" min="1" inputmode="numeric" placeholder="MM">
       </div>
 
       <!--  Section for Year Input -->
       <div class="input">
         <label for="year-date">Year</label>
-        <input type="number" name="year-date" id="year-date" placeholder="YY">
+        <input type="number" name="year-date" id="year-date" min="1" inputmode="numeric" placeholder="YY">
       </div>
     
     </section>
 
-    <button><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M3 6L8 11L13 6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
+    <!-- Button with Chevron -->
+    <button class="chevron-button" aria-label="Submit">
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 16 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M3 6L8 11L13 6"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
     </button>
+
   
     <!--  Output Section  -->
     <section class="section column">
