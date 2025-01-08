@@ -1,4 +1,8 @@
- body{
+*{
+    font-family: "Poppins", serif;
+}
+
+body{
     background-color: hsl(0, 0%, 86%);
     display: flex;
     flex-direction: column;
@@ -6,6 +10,8 @@
     justify-content: center;
     align-items: center;
     min-height: 100svh;
+    
+    
  }
  
  /*
@@ -26,10 +32,11 @@
     padding: .875rem;
  }
 
- /*     Section - row layout */
+ /*     Section - Row Layout */
  .row{
     flex-direction: row;
-    background-color: aqua;
+ 
+    gap: 1rem;
  }
 
  /*     Section - Column Layout */
@@ -38,4 +45,27 @@
     background-color: beige;
     align-items: flex-start;
 
+ }
+
+ /*     Input Section (individual input feild) - Layout */
+ .input{
+    display: flex;
+    flex-direction: column;
+ }
+
+ /*     UI - Input   */
+
+ .input label{
+    text-transform: uppercase;
+    color: hsl(0, 1%, 44%);
+    font-weight: 700;
+    font-size: .75rem;
+    letter-spacing: .1rem;
+ }
+
+ .input input[type='number']{
+    border: .5px solid hsl(0, 0%, 86%);
+    padding: .75rem;
+    max-width: 3.75rem;
+    border-radius: .3rem;
  }
