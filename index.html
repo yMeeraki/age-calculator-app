@@ -13,27 +13,30 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+
+  <link rel="stylesheet" href="main.css">
+
 </head>
 <body>
   <main class="card">
 
     <!--  Input Section -->
-    <section>
+    <section class="section row">
 
       <!--  Section for Day Input -->
-      <div>
+      <div class="input">
         <label for="day-date">Day</label>
         <input type="number" name="day-date" id="day-date" placeholder="DD">
       </div>
 
       <!--  Section for Month Input -->
-      <div>
+      <div class="input">
         <label for="month-date">Month</label>
         <input type="number" name="month-date" id="month-date" placeholder="MM">
       </div>
 
       <!--  Section for Year Input -->
-      <div>
+      <div class="input">
         <label for="year-date">Year</label>
         <input type="number" name="year-date" id="year-date" placeholder="YY">
       </div>
@@ -41,7 +44,7 @@
     </section>
   
     <!--  Output Section  -->
-    <section>
+    <section class="section column">
       <h1>
         <span>--</span> years
       </h1>
